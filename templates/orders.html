@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Foods - Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ url_for('index') }}">Yummy</a>
+            </div>
+            <div class="menu">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('signup') }}">Sign Up</a>
+                <a href="{{ url_for('contact_us') }}">Contact Us</a>
+                <a href="{{ url_for('orders') }}">Orders</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="orders">
+        <h2>Orders</h2>
+        <p>View and manage your orders here.</p>
+        <!-- Add order management content here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yummy Foods</p>
+    </footer>
+</body>
+</html>

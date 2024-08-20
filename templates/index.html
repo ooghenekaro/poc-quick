@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Foods - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="{{ url_for('index') }}">Yummy</a>
+            </div>
+            <div class="menu">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('signup') }}">Sign Up</a>
+                <a href="{{ url_for('contact_us') }}">Contact Us</a>
+                <a href="{{ url_for('orders') }}">Orders</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Welcome to Yummy Foods!</h1>
+            <p>Your favorite restaurant app.</p>
+        </div>
+
+        <div class="content">
+            <section id="about" class="about-us glide-in">
+                <h2>About Us</h2>
+                <p>Yummy Foods is dedicated to providing you with the best dining experience. Explore our menu and order your favorite dishes from the comfort of your home.</p>
+            </section>
+
+            <section id="featured" class="featured-dishes glide-in">
+                <h2>Featured Dishes</h2>
+                <div class="dishes">
+                    <div class="dish">
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="Dish 1">
+                        <p>Pasta Primavera</p>
+                    </div>
+                    <div class="dish">
+                        <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg" alt="Dish 2">
+                        <p>Grilled Chicken</p>
+                    </div>
+                    <div class="dish">
+                        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" alt="Dish 3">
+                        <p>Beef Steak</p>
+                    </div>
+                    <div class="dish">
+                        <img src="https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg" alt="Dish 4">
+                        <p>Shrimp Skewers</p>
+                    </div>
+                    <div class="dish">
+                        <img src="https://images.pexels.com/photos/1639566/pexels-photo-1639566.jpeg" alt="Dish 5">
+                        <p>Cheesecake</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yummy Foods</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
